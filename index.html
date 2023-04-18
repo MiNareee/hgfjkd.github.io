@@ -5,10 +5,41 @@
             Display a confirmation dialog when
             clicking an a tag link
         </title>
-      <script type='text/javascript' src="fgh1.js"> 
-    </script>
     </head> 
-  <body>
-    <input type = "submit" name = "submit" id = "submit" value = "Добавить">
-  </body>
-</html>
+      
+    <body style = "text-align:center;">
+           
+        <h1 style = "color:green;" > 
+            GeeksForGeeks 
+        </h1>
+          
+        <p id = "GFG_UP" style =
+            "font-size: 15px; font-weight: bold;">
+        </p>
+          
+        <a href="#" class="confirm">Link</a>
+          
+        <br><br>
+          
+        <p id = "GFG_DOWN" style =
+            "color:green; font-size: 20px; font-weight: bold;">
+        </p>
+          
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+                  
+            el_up.innerHTML =
+                    "Click on the LINK for further confirmation."; 
+              
+            var el = document.getElementsByClassName('confirm');
+              
+            var confirmThis = function (e) {
+                if (!confirm('Are you sure?')) e.preventDefault();
+            };
+              
+            for (var i = 0, l = el.length; i < l; i++) {
+                el[i].addEventListener('click', confirmThis, false);
+            }
+        </script> 
+    </body> 
+</html>     
