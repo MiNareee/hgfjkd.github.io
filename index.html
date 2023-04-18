@@ -1,45 +1,19 @@
-<!DOCTYPE HTML> 
-<html> 
-    <head> 
-        <title> 
-            Display a confirmation dialog when
-            clicking an a tag link
-        </title>
-    </head> 
-      
-    <body style = "text-align:center;">
-           
-        <h1 style = "color:green;" > 
-            GeeksForGeeks 
-        </h1>
-          
-        <p id = "GFG_UP" style =
-            "font-size: 15px; font-weight: bold;">
-        </p>
-          
-        <button="#" class="confirm">Link</button>
-          
-        <br><br>
-          
-        <p id = "GFG_DOWN" style =
-            "color:green; font-size: 20px; font-weight: bold;">
-        </p>
-          
-        <script>
-            var el_up = document.getElementById("GFG_UP");
-                  
-            el_up.innerHTML =
-                    "Click on the LINK for further confirmation."; 
-              
-            var el = document.getElementsByClassName('confirm');
-              
-            var confirmThis = function (e) {
-                if (!confirm('Are you sure?')) e.preventDefault();
-            };
-              
-            for (var i = 0, l = el.length; i < l; i++) {
-                el[i].addEventListener('click', confirmThis, false);
-            }
-        </script> 
-    </body> 
-</html>     
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <link rel="stylesheet" href="D:\test\style\main.css">
+  <script src="D:\test\js\adaptiveMenu.js" defer></script>
+</head>
+
+<body>
+  <div class="test">
+    <button onclick="out()" class="btn-u btn-large">Ответить</button>
+    <hr>
+    <p id="out"></p>
+  </div>
+</body>
+
+</html>
