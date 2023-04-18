@@ -4,16 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <title>test</title>
-  <link rel="stylesheet" href="D:\test\style\main.css">
-  <script src="D:\test\js\adaptiveMenu.js" defer></script>
 </head>
 
 <body>
-  <div class="test">
     <button onclick="out()" class="btn-u btn-large">Ответить</button>
-    <hr>
-    <p id="out"></p>
-  </div>
+    <script>
+      function out(){
+      var result = confirm("Завершить выполнение программы?");
+      if(result===true){
+        document.write("Работа программы завершена")
+      }else{
+    document.write("Программа продолжает работать");
+      }
+      }
+  </script>
 </body>
 
 </html>
