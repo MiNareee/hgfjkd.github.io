@@ -1,16 +1,29 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Модальное окно для сайта на чистом JavaScript - Пример 01</title>
+</head>
+
 <body>
+
 <button id="show-modal">Открыть</button>
 
+<script src="/examples/pens/itc-modal/main.js"></script>
 <script>
   // создаём модальное окно
   const modal = new ItcModal();
   // при клике по кнопке #show-modal
   document.querySelector('#show-modal').addEventListener('click', () => {
-    // откроем модальное окно
+    // отобразим модальное окно
     modal.show();
   });
 </script>
+
 </body>
+
 </html>
+
