@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-<script>
+<button id="show-modal">Открыть</button>
 
- if (confirm('Данные точки уже закрыты: Всё-ровно построить маршрут?')){
-   console.log(10+10)
- }else{
-   console.log(0)
- }
+<script>
+  // создаём модальное окно
+  const modal = new ItcModal();
+  // при клике по кнопке #show-modal
+  document.querySelector('#show-modal').addEventListener('click', () => {
+    // откроем модальное окно
+    modal.show();
+  });
 </script>
- 
 </body>
 </html>
